@@ -3,6 +3,7 @@ import {PostsStore} from "./posts.store";
 import {HttpClient} from "@angular/common/http";
 import {Post, ServerPost} from "./post.model";
 import {map} from "rxjs";
+import * as moment from 'moment';
 
 @Injectable({ providedIn: "root" })
 export class PostsService {
@@ -25,7 +26,7 @@ export class PostsService {
                 userName: serverPost.user_name,
                 content: serverPost.content,
                 email: serverPost.email,
-                createdAt: serverPost.created_at,
+                createdAt: moment(serverPost.createdAt).format('DD/MM/YYYY hh:mm'),
                 tags: serverPost.tags
             }
         })

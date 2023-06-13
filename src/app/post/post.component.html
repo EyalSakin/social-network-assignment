@@ -1,11 +1,14 @@
-<mat-card>
+<mat-card class="card">
     <mat-card-header>
         <mat-card-title-group>
             <mat-card-title>{{ data.userName }}</mat-card-title>
             <mat-card-subtitle>{{ data.email }}</mat-card-subtitle>
         </mat-card-title-group>
     </mat-card-header>
+    <br>
     <mat-card-content>{{ data.content }}</mat-card-content>
-    <mat-card-content>{{ data.createdAt }}</mat-card-content>
-    <mat-card-content>{{ data.tags }}</mat-card-content>
+    <br>
+    <mat-card-content><b>Created At:</b> {{ data.createdAt }}</mat-card-content>
+    <br>
+    <mat-card-content><b>Tags:</b> {{ data.tags }}</mat-card-content>
 </mat-card>

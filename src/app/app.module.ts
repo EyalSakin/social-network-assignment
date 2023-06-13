@@ -8,6 +8,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { PostsComponent } from './posts/posts.component';
 import {PostsStateModule} from "./state/post/posts-state.module";
+import {CdkFixedSizeVirtualScroll, CdkVirtualForOf, CdkVirtualScrollViewport} from "@angular/cdk/scrolling";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,10 @@ import {PostsStateModule} from "./state/post/posts-state.module";
     AppRoutingModule,
     MatCardModule,
     MatToolbarModule,
-    PostsStateModule
+    PostsStateModule,
+    CdkVirtualScrollViewport,
+    CdkFixedSizeVirtualScroll,
+    CdkVirtualForOf
   ],
   bootstrap: [AppComponent]
 })

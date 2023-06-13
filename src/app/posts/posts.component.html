@@ -1,3 +1,5 @@
 <div class="container">
-    <app-post class="container__post" *ngFor="let post of posts$ | async" [data]="post"></app-post>
+    <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="container__viewport">
+        <app-post class="container__post" *cdkVirtualFor="let post of posts$ | async" [data]="post"></app-post>
+    </cdk-virtual-scroll-viewport>
 </div>
