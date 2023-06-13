@@ -18,7 +18,13 @@ app.use((req, res, next) => {
 });
 
 app.get('/api/posts', (req, res) => {
-    res.json(data);
+    const sortedData = data.sort((a, b) => {
+        const dateA = new Date(a.created_at.replace(/\s/g, ''));
+        const dateB = new Date(b.created_at.replace(/\s/g, ''));
+        return dateB - dateA;
+    });
+
+    res.json(sortedData);
 });
 
 app.listen(3000);

@@ -21,12 +21,14 @@ export class PostsService {
 
     postsNormalizer = (serverPosts: ServerPost[]): Post[] => {
         return serverPosts.map((serverPost: any): Post => {
+            const dateString: string = serverPost.created_at.replace(/\s/g, '');
+            const date: Date = new Date(dateString);
             return {
                 id: serverPost._id,
                 userName: serverPost.user_name,
                 content: serverPost.content,
                 email: serverPost.email,
-                createdAt: moment(serverPost.createdAt).format('DD/MM/YYYY hh:mm'),
+                createdAt: moment(date).format('DD/MM/YYYY hh:ss'),
                 tags: serverPost.tags
             }
         })
