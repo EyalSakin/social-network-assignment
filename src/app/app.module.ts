@@ -7,10 +7,7 @@ import { PostComponent } from './post/post.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { PostsComponent } from './posts/posts.component';
-import {PostsService} from "./state/post/posts.service";
-import {PostsStore} from "./state/post/posts.store";
-import {PostsQuery} from "./state/post/posts.query";
-import {HttpClientModule} from "@angular/common/http";
+import {PostsStateModule} from "./state/post/posts-state.module";
 
 @NgModule({
   declarations: [
@@ -24,12 +21,7 @@ import {HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     MatCardModule,
     MatToolbarModule,
-    HttpClientModule
-  ],
-  providers: [
-      PostsService,
-      PostsStore,
-      PostsQuery
+    PostsStateModule
   ],
   bootstrap: [AppComponent]
 })
