@@ -8,3 +8,12 @@ export interface Post {
     createdAt: string;
     tags: string[];
 }
+
+export interface ServerPost {
+    _id: ID;
+    user_name: string;
+    email: string;
+    content: string;
+    created_at: string;
+    tags: string[];
+}
