@@ -7,6 +7,10 @@ import { PostComponent } from './post/post.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { PostsComponent } from './posts/posts.component';
+import {PostsService} from "./state/post/posts.service";
+import {PostsStore} from "./state/post/posts.store";
+import {PostsQuery} from "./state/post/posts.query";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -19,9 +23,14 @@ import { PostsComponent } from './posts/posts.component';
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+      PostsService,
+      PostsStore,
+      PostsQuery
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
