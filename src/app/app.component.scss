@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  &__router-outlet-wrapper {
+    display: flex;
+    flex: 1;
+    max-height: calc(100vh - 64px);
+  }
+}
