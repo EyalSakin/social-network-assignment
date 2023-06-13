@@ -8,7 +8,9 @@
     <br>
     <mat-card-content>{{ data.content }}</mat-card-content>
     <br>
-    <mat-card-content><b>Created At:</b> {{ data.createdAt }}</mat-card-content>
+    <mat-card-content><b>{{ data.createdAt }}</b></mat-card-content>
     <br>
-    <mat-card-content><b>Tags:</b> {{ data.tags }}</mat-card-content>
+    <mat-card-content>
+        <span *ngFor="let tag of data.tags"><b>#{{ tag }} </b></span>
+    </mat-card-content>
 </mat-card>
