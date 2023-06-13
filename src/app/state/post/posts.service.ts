@@ -25,6 +25,78 @@ export class PostsService {
                 content: "This is the content This is the content This is the content This is the content This is the content This is the content"
             },
             {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
+                id: 1,
+                userName: 'eyal',
+                createdAt: '1/2/23',
+                email: 'eyalsakin@gmail.com',
+                tags: ["tag1", "tag2"],
+                content: "This is the content This is the content This is the content This is the content This is the content This is the content"
+            },
+            {
                 id: 2,
                 userName: 'asdasd',
                 createdAt: '1/2/23',
